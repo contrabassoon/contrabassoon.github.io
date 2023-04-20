@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="stylesheet" href="france.css">
   <meta charset="utf-8">
   <title>France</title>
 </head>
 
 <body>
+  
   <header>
     <h1>France</h1>
+    <img src="france-flag.png" alt="Flag of France">
     <nav>
       <ul>
         <li><a href="#overview">Overview</a></li>
@@ -28,28 +31,33 @@
     <section>
       <h2 id="geography">Geography</h2>
       <article>
-        <h3>Location</h3>
-        <img src="france-map.png" alt="Map of mainland France">
-        <dl>
-          <dt>Metropolitan France</dt>
-          <dd>Western Europe, bordering the Bay of Biscay and English Channel, between Belgium and Spain, southeast of the <abbr title="United Kingdom">UK</abbr>; bordering the Mediterranean Sea, between Italy and Spain</dd>
-          
-          <dt>French Guiana</dt>
-          <dd>Northern South America, bordering the North Atlantic Ocean, between Brazil and Suriname</dd>
-          
-          <dt>Guadeloupe</dt>
-          <dd>Caribbean, islands between the Caribbean Sea and the North Atlantic Ocean, southeast of Puerto Rico</dd>
-          
-          <dt>Martinique</dt>
-          <dd>Caribbean, island between the Caribbean Sea and North Atlantic Ocean, north of Trinidad and Tobago</dd>
-          
-          <dt>Mayotte</dt>
-          <dd>Southern Indian Ocean, island in the Mozambique Channel, about halfway between northern Madagascar and northern Mozambique</dd>
-          
-          <dt>Reunion</dt>
-          <dd>Southern Africa, island in the Indian Ocean, east of Madagascar</dd>
-        </dl>
+        <div class="grid-container">
+          <div class="left-column">
+            <h3>Information</h3>
+            <dl>
+              <dt>Metropolitan France</dt>
+              <dd>Western Europe, bordering the Bay of Biscay and English Channel, between Belgium and Spain, southeast of the <abbr title="United Kingdom">UK</abbr>; bordering the Mediterranean Sea, between Italy and Spain</dd>
+              <dt>French Guiana</dt>
+              <dd>Northern South America, bordering the North Atlantic Ocean, between Brazil and Suriname</dd>
+              <dt>Guadeloupe</dt>
+              <dd>Caribbean, islands between the Caribbean Sea and the North Atlantic Ocean, southeast of Puerto Rico</dd>
+              <dt>Martinique</dt>
+              <dd>Caribbean, island between the Caribbean Sea and North Atlantic Ocean, north of Trinidad and Tobago</dd>
+              <dt>Mayotte</dt>
+              <dd>Southern Indian Ocean, island in the Mozambique Channel, about halfway between northern Madagascar and northern Mozambique</dd>
+              <dt>Reunion</dt>
+              <dd>Southern Africa, island in the Indian Ocean, east of Madagascar</dd>
+            </dl>
+          </div>
+          <div class="right-column">
+            <h3>Location</h3>
+            <img src="france-map.png" alt="Map of mainland France">
+          </div>
+        </div>
       </article>
+      
+      
+      
       <article>
         <h3>Geographic Coordinates</h3>
         <table>
@@ -179,11 +187,16 @@
             <dd>Name derives from the Parisii, a Celtic tribe that inhabited the area from the 3rd century <abbr title="Before Christ">B.C.</abbr>, but who were conquered by the Romans in the 1st century B.C.; the Celtic settlement became the Roman town of Lutetia Parisiorum (Lutetia of the Parisii); over subsequent centuries it became Parisium and then just Paris.</dd>
           </dl>
         </article>
-        <article>
+        <article class="grid-container">
           <h3>Flag</h3>
-          <img src="france-flag.png" alt="French flag">
-          <p>Three equal vertical bands of blue (hoist side), white, and red; known as the "Le drapeau tricolore" (French Tricolor), the origin of the flag dates to 1790 and the French Revolution when the "ancient French color" of white was combined with the blue and red colors of the Parisian militia; the official flag for all French dependent areas. Note that for the first four years, 1790-94, the order of colors was reversed, red-white-blue, instead of the current blue-white-red; the design and/or colors are similar to a number of other flags, including those of Belgium, Chad, Cote d'Ivoire, Ireland, Italy, Luxembourg, and Netherlands</p>
+          <div class="left-column">
+            <p>Three equal vertical bands of blue (hoist side), white, and red; known as the "Le drapeau tricolore" (French Tricolor), the origin of the flag dates to 1790 and the French Revolution when the "ancient French color" of white was combined with the blue and red colors of the Parisian militia; the official flag for all French dependent areas. Note that for the first four years, 1790-94, the order of colors was reversed, red-white-blue, instead of the current blue-white-red; the design and/or colors are similar to a number of other flags, including those of Belgium, Chad, Cote d'Ivoire, Ireland, Italy, Luxembourg, and Netherlands</p>
+          </div>
+          <div class="right-column">
+            <img src="france-flag.png" alt="French flag">
+          </div>
         </article>
+        
       </section>
       
       <section>
@@ -198,7 +211,7 @@
                 <li>115,000 in the Army</li>
                 <li>35,000 in the Navy</li>
                 <li>40,000 in the Air Force</li>
-                <li>15,000 other (joint staff, administration, logistics, procurement, medical service, etc)</li>
+                <li>15,000 other (joint staff, administration, logistics, procurement, medical service, <abbr title="et cetera">etc.</abbr>)</li>
               </ul>
             </li>
             <li>100,000 (approximately) National Gendarmerie</li>
@@ -218,9 +231,8 @@
         </article>
       </section>
     </main>
-    
     <footer>
       <p>All information and images are sourced from the <a href="https://www.cia.gov/the-world-factbook/"><abbr title="Central Intelligence Agency">CIA</abbr> World Factbook</a></p>
     </footer>
   </body>
-</html>
+  </html>
