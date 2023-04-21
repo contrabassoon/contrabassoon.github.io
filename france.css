@@ -9,8 +9,9 @@ header {
   left: 0;
   width: 100%;
   height: 100px;
-  background-color: #F9F9F9;
+  margin: auto;
   padding: 20px;
+  background-color: #F9F9F9;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   display: flex;
   justify-content: space-between;
@@ -25,6 +26,7 @@ header img {
 nav {
   display: flex;
   gap: 20px;
+  padding-right: 30px;
 }
 
 nav a {
@@ -51,7 +53,7 @@ body {
 }
 
 h1 {
-  font-size: 36px;
+  font-size: 40px;
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 30px;
@@ -59,12 +61,21 @@ h1 {
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 30px;
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 20px;
   color: #333333;
 }
+
+h3 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  color: #333333;
+}
+
 
 p {
   font-size: 16px;
@@ -74,6 +85,11 @@ p {
 
 dl dt {
   font-weight: bold;
+}
+
+dl {
+  display: grid;
+  grid-gap: 10px; /* Change this value to adjust the spacing between items */
 }
 
 
